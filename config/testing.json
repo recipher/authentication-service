@@ -1,0 +1,52 @@
+{
+  "HOST": "http://testing.api.recipher.co.uk"
+
+, "HTTP": {
+    "SECURE": false
+  , "RATE": 100000
+  } 
+
+, "CACHE": {
+    "TTL": 180
+  }
+
+, "RETHINKDB": {
+    "DATABASE": "testing"
+  }
+
+, "PROVIDER": {
+    "EMAIL": "sendgrid"
+  }
+
+, "LOGGING": {
+    "TYPE": "papertrail"
+  , "FORMAT": "tiny"
+  , "STACK": true
+  }
+
+, "PAPERTRAIL": {
+    "HOST": "logs4.papertrailapp.com"
+  , "PORT": 24180
+  }
+
+, "FACEBOOK": {
+    "ID": ""
+  , "SECRET": ""
+  , "SCOPE": "email,user_likes,user_friends"
+  }
+
+, "TWITTER": {
+    "ID": ""
+  , "SECRET": ""
+
+  , "TOKEN": {
+      "TOKEN": ""
+    , "SECRET": ""
+    }
+
+  }
+, "GOOGLE": {
+    "ID": ""
+  , "SECRET": ""
+  }  
+}

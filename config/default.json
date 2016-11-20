@@ -1,0 +1,65 @@
+{
+  "FACEBOOK": {
+    "SCOPE": [ "email", "public_profile", "user_friends", "manage_pages" ]
+  }
+
+, "HTTP": {
+    "CORS": { "Access-Control-Allow-Credentials": true, "origin": "*" }
+
+  , "AUTHENTICATE": [ 
+      "system/system/system"
+    , "signup/signup/guest" 
+    ]
+  }
+
+, "ROLES": [
+    { "name": "Guest", "handle": "guest", "claims": [ 
+        { "entity": "member", "right": 1 } 
+      , { "entity": "user", "right": 1 } 
+      ] 
+    }
+  , { "name": "System", "handle": "system", "claims": [ 
+        { "entity": "member", "right": 15 } 
+      , { "entity": "user", "right": 15 } 
+      , { "entity": "system", "right": 15 } 
+      ]
+    }
+  , { "name": "Support", "handle": "support", "claims": [ 
+        { "entity": "member", "right": 15 } 
+      , { "entity": "user", "right": 15 } 
+      ]
+    }
+  ]
+
+, "TOKEN": {
+    "SECRET": "qP64ZJkUYwTR&p"
+  }
+
+, "CACHE": {
+    "TTL": 120
+  }
+
+, "LOGGING": {
+    "LEVEL": "verbose"
+  }
+
+, "MANDRILL": {
+    "ID": ""
+  , "SUBACCOUNT": ""
+  }
+
+, "SENDGRID": {
+    "KEY": ""
+  }
+
+, "EMAIL": {
+    "FROM": "johnny@recipher.co.uk"
+  , "NAME": "Johnny Hall"
+  }
+
+, "TWILIO": {
+    "ID": ""
+  , "TOKEN": ""
+  , "NUMBER": ""
+  }
+}

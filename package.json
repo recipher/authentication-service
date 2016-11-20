@@ -1,0 +1,53 @@
+{
+  "name": "@recipher/authentication-service",
+  "version": "1.0.0",
+  "description": "Authentication services",
+  "main": "node index",
+  "scripts": {
+    "start": "node bootstrap",
+    "test": "node ./node_modules/.bin/gulp test"
+  },
+  "engines": {
+    "node": "4.x.x",
+    "npm": "3.x"
+  },
+  "author": "Johnny Hall",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:recipher/authentication-service.git"
+  },
+  "dependencies": {
+    "@recipher/app": "^1.1.8",
+    "@recipher/authentication": "^1.0.2",
+    "@recipher/bootstrap": "^1.0.3",
+    "@recipher/bus": "^1.0.9",
+    "@recipher/configuration": "^1.0.0",
+    "@recipher/errors": "^1.0.0",
+    "@recipher/log": "^1.0.3",
+    "@recipher/redis": "^1.0.3",
+    "@recipher/repl": "^1.0.0",
+    "@recipher/request": "^1.2.2",
+    "@recipher/server": "^1.3.30",
+    "@recipher/socket": "^1.1.2",
+    "@recipher/store": "^1.2.17",
+    "@recipher/task": "^1.1.4",
+    "@recipher/utility": "^1.1.1",
+    "bluebird": "^3.3.5",
+    "lodash": "^4.11.1",
+    "oauth2-server": "^2.4.1"
+  },
+  "devDependencies": {
+    "@recipher/gulp": "^1.0.7",
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
+    "gulp": "^3.9.0",
+    "mocha": "^2.2.5",
+    "nock": "^2.10.0",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.15.4",
+    "sinon-as-promised": "^4.0.0",
+    "sinon-chai": "^2.8.0",
+    "supertest": "^1.0.1"
+  }
+}
