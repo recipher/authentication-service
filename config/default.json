@@ -9,6 +9,7 @@
   , "AUTHENTICATE": [ 
       "system/system/system"
     , "signup/signup/guest" 
+    , "democlient/democlientsecret/system" 
     ]
   }
 

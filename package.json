@@ -4,7 +4,7 @@
   "description": "Authentication services",
   "main": "node index",
   "scripts": {
-    "start": "node bootstrap",
+    "start": "node --harmony bootstrap",
     "test": "node ./node_modules/.bin/gulp test"
   },
   "engines": {
