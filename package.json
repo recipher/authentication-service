@@ -1,6 +1,6 @@
 {
   "name": "@recipher/authentication-service",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Authentication services",
   "main": "node index",
   "scripts": {
